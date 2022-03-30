@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+   "banner banner banner"
+   "col1   col2   col3";
+   grid-template-columns: 1fr 1fr 1fr
+   gap: .75rem;
+}
+  .banner-img {
+    grid-area: banner;
+  }
+  .banner-text {
+    grid-area: banner;
+  color: #222;
+  padding: 2rem;
+  align-self: flex-end;
+  }
+
+  .col1-img {
+    grid-area: col1;
+  }
+
+}
+.col2-img {
+  grid-area: col2;
+}
+
+}
+.col3-img {
+  grid-area: col3;
+}
+  p {
+  margin-top: 0.5rem;
+}
+
+
+header {
+  padding: 1.5rem 1rem;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
