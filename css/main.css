@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  font-family: Merriweather, serif;
   line-height: 1.5;
 }
 
@@ -23,38 +23,39 @@ figure {
 main {
   display: grid;
   grid-template-areas:
-   "banner banner banner"
-   "col1   col2   col3";
-   grid-template-columns: 1fr 1fr 1fr
-   gap: .75rem;
+    "banner banner banner"
+    "col1   col2   col3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .75rem;
+  font-family: Merriweather, serif;
 }
-  .banner-img {
-    grid-area: banner;
-  }
-  .banner-text {
-    grid-area: banner;
-  color: #222;
+
+.banner-img {
+  grid-area: banner;
+}
+
+.banner-text {
+  grid-area: banner;
   padding: 2rem;
   align-self: flex-end;
-  }
-
-  .col1-img {
-    grid-area: col1;
-  }
-
 }
+
+.col1-img {
+  grid-area: col1;
+}
+
 .col2-img {
   grid-area: col2;
 }
 
-}
 .col3-img {
   grid-area: col3;
 }
-  p {
-  margin-top: 0.5rem;
-}
 
+p {
+  margin-top: .5rem;
+  color: #fff;
+}
 
 header {
   padding: 1.5rem 1rem;
@@ -72,4 +73,13 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-style: italic;
+  color: #fff;
+}
+
+dt {
+  font-style: italic;
+}
+
+div .banner-text {
+  padding-bottom: 0;
 }
